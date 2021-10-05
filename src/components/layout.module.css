@@ -2,15 +2,26 @@
     font-size: 3rem;
     color: gray;
     font-weight: 700;
-    margin: 3rem 0;
+    margin: 0;
+}
+.background {
+    background-image: url("../images/p1.jpg");
+    background-size: cover;
+    background-position: top left;
+    margin: -10px -8px -8px -10px;
+    padding: -1px;
 }
 .container {
     margin: auto;
-    max-width: 800px;
+    min-height: 900px;
+    padding: 30px;
+    max-width: 900px;
     font-family: sans-serif;
+    background-color: white;
 }
 .heading {
     color: royalblue;
+    text-align: center;
 }
 .nav-links {
     display: flex;
