@@ -22,6 +22,7 @@
 .heading {
     color: royalblue;
     text-align: center;
+    font-size: 36pt;
 }
 .nav-links {
     display: flex;
@@ -33,4 +34,5 @@
 }
 .nav-link-text {
     color: royalblue;
+    font-size: 18pt;
 }

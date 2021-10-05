@@ -7,7 +7,7 @@ import Layout from '../../components/layout'
 const BlogPost = ({ data }) => {
     return (
         <Layout pageTitle={data.mdx.frontmatter.title}>
-            <p>{data.mdx.frontmatter.datePublished}</p>
+            <p>Date Posted: {data.mdx.frontmatter.datePublished}</p>
             <hr></hr>
             <MDXRenderer>
                 {data.mdx.body}

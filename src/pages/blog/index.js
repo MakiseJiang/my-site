@@ -6,7 +6,8 @@ import { navLinkText } from "../../components/layout.module.css";
 
 const BlogPage = ({ data }) => {
     return(
-        <Layout pageTitle='Blog'>
+        <Layout pageTitle='Blogs'>
+            <hr></hr>
             {
                 data.allMdx.nodes.map((node) => (
                     <article key={node.id}>
@@ -15,7 +16,7 @@ const BlogPage = ({ data }) => {
                                 {node.frontmatter.title}
                             </Link>
                         </h2>
-                        <p>Posted: {node.frontmatter.datePublished}</p>
+                        <p>Date Posted: {node.frontmatter.datePublished}</p>
                     </article>
                 ))
             }
