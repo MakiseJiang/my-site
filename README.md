@@ -4,4 +4,4 @@
 
 Currently it is hosted on Gatsby Cloud.
 
-It is still in progress... Hopefully I can finish it by this semester🤣!
+It is still in progress...
