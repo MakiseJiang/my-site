@@ -1,12 +1,13 @@
 import { graphql, Link } from 'gatsby';
 import * as React from 'react';
 import Layout from '../../components/layout'
-import { navLinkText, segment } from "../../components/layout.module.css";
+import { navLinkText, segment, heading } from "../../components/layout.module.css";
 
 
 const BlogPage = ({ data }) => {
     return(
         <Layout pageTitle='Blogs'>
+        <h1 className={heading}>Blogs</h1>
             <hr className={segment}></hr>
             {
                 data.allMdx.nodes.map((node) => (

@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 :root {
     --font-heading: "Quicksand", Arial, sans-serif;
     /* Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
-    --font-body: "Quicksand", Arial, sans-serif;
+    --font-body: Arial, sans-serif;
     --font-title: "Playfair Display", Georgia, serif;
-    --font-size-1: 1.125rem;
-    --font-size-2: 1.2rem;
+    --font-size-small: 0.8rem;
+    --font-size-text: 1.125rem;
+    --font-size-1: 1rem;
+    --font-size-2: 1.1rem;
     --font-size-3: 1.4rem;
     --color-text: #2e353f;
     --color-text-light: #4f5969;
@@ -47,7 +51,7 @@ blockquote {
 .sidenav {
     margin-left: 90px;
     height: 100%;
-    width: 300px;
+    width: 290px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -62,12 +66,13 @@ blockquote {
     padding: 6px;
     text-decoration: none;
     font-family: var(--font-heading);
-    font-size: var(--font-size-3);
+    font-size: var(--font-size-2);
     color: white;
     display: block;
 }
 .sidenav a:hover {
-    color: var(--color-theme-vice);
+    color: var(--color-theme);
+    background-color: var(--color-theme-vice);
 }
 .profileAvatar {
     background-image: url("../images/Avatar.png");
@@ -84,8 +89,7 @@ blockquote {
     margin: auto;
     }
 }
-
-.text-center{
+.name-box{
     margin: 10px 60px 30px 60px;
     padding: 6px;
     font-family: var(--font-title);
@@ -94,12 +98,19 @@ blockquote {
     color: white;
     text-align: center;
 }
-.center-align-box{
+.text-center{
+    margin: 30px 60px;
+    padding: 6px;
+    font-family: var(--font-heading);
+    line-height: 1.8rem;
+    font-weight: 100;
+    font-size: var(--font-size-1);
+    color: white;
     text-align: center;
 }
 .text-center ul{
     list-style-type: none;
-    margin: 0;
+    margin-top: 0;
     padding: 0;
     overflow: hidden;
 }
@@ -110,7 +121,10 @@ blockquote {
     display: inline;
     padding: 10px;
 }
-
+.map-icon{
+    float: left;
+    margin : 2px 2px 18px 10px;
+}
 .DLbutton{
     margin: 20px;
     padding: 8px;
@@ -130,7 +144,7 @@ blockquote {
     font-weight: 400;
     line-height: 1.8;
     background-color: var(--color-background);
-    font-size: var(--font-size-1);
+    font-size: var(--font-size-text);
     color: var(--color-text);
 }
 .heading {

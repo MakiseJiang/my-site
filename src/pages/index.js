@@ -5,8 +5,7 @@ import { segment } from "../components/layout.module.css";
 const IndexPage = () => {
   return(
     <Layout pageTitle='Home'>
-      <hr className={segment}></hr>
-      <p>I am making this by following the Gatsby tutorial.</p>
+      <p>I am preparing the contents now...</p>
     </Layout>
   )
 }

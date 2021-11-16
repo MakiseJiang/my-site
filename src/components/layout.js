@@ -6,12 +6,13 @@ import {
     container,
     sidenav,
     profileAvatar,
+    nameBox,
     textCenter,
-    centerAlignBox,
+    mapIcon,
     background,
-    heading,
     siteTitle
 } from './layout.module.css';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Layout = ({pageTitle, children}) => {
     const data = useStaticQuery(graphql`
@@ -28,16 +29,17 @@ const Layout = ({pageTitle, children}) => {
         {/* SideBar */}
         <div className={sidenav}>
             <div className={profileAvatar}/>
-            <div className={textCenter}>Makise <strong>Jiang</strong></div>
+            <div className={nameBox}>Makise <strong>Jiang</strong></div>
             <a href="/#"><Link to='/'>Home</Link></a>
             <a href="/#"><Link to='/about'>About</Link></a>
             <a href="/#"><Link to='/blog'>Blog</Link></a>
+            <div className={textCenter}><div className={mapIcon}><FontAwesomeIcon icon={faMapMarkerAlt} color="white" /></div>Shanghai, CN</div>
             <div className={textCenter}>
                 <ul>
-                <li><a  href="https://github.com/MakiseJiang"><FontAwesomeIcon icon={faGithub} color="white" /></a></li>
-                <li><a><FontAwesomeIcon icon={faTwitter} color="white" href="" /></a></li>
-                <li><a><FontAwesomeIcon icon={faInstagram} color="white" href="" /></a></li>
-                <li><a><FontAwesomeIcon icon={faLinkedin} color="white" href="" /></a></li>
+                    <li><a  href="https://github.com/MakiseJiang"><FontAwesomeIcon icon={faGithub} color="white" /></a></li>
+                    <li><a><FontAwesomeIcon icon={faTwitter} color="white" href="" /></a></li>
+                    <li><a><FontAwesomeIcon icon={faInstagram} color="white" href="" /></a></li>
+                    <li><a><FontAwesomeIcon icon={faLinkedin} color="white" href="" /></a></li>
                 </ul>
             </div>
         </div>
@@ -46,7 +48,6 @@ const Layout = ({pageTitle, children}) => {
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
             <header className={siteTitle}>{data.site.siteMetadata.title}</header>
             <main>
-                <h1 className={heading}>{pageTitle}</h1>
                 {children}
             </main>
         </div>
