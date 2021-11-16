@@ -1,6 +1,6 @@
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import * as React from 'react';
 import { 
     container,
@@ -33,8 +33,12 @@ const Layout = ({pageTitle, children}) => {
             <a href="/#"><Link to='/about'>About</Link></a>
             <a href="/#"><Link to='/blog'>Blog</Link></a>
             <div className={textCenter}>
-                <a  href="https://github.com/MakiseJiang"><FontAwesomeIcon icon={faGithub} color="white" /></a>
-                <a><FontAwesomeIcon icon={faTwitter} color="white" href="" /></a>
+                <ul>
+                <li><a  href="https://github.com/MakiseJiang"><FontAwesomeIcon icon={faGithub} color="white" /></a></li>
+                <li><a><FontAwesomeIcon icon={faTwitter} color="white" href="" /></a></li>
+                <li><a><FontAwesomeIcon icon={faInstagram} color="white" href="" /></a></li>
+                <li><a><FontAwesomeIcon icon={faLinkedin} color="white" href="" /></a></li>
+                </ul>
             </div>
         </div>
         {/* MainPage */}

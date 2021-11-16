@@ -86,7 +86,7 @@ blockquote {
 }
 
 .text-center{
-    margin: 10px 30px 30px 30px;
+    margin: 10px 60px 30px 60px;
     padding: 6px;
     font-family: var(--font-title);
     font-weight: 100;
@@ -97,8 +97,18 @@ blockquote {
 .center-align-box{
     text-align: center;
 }
-.center-align-box a{
-    padding: 5px;
+.text-center ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.text-center ul li{
+    float: left;
+}
+.text-center ul li a{
+    display: inline;
+    padding: 10px;
 }
 
 .DLbutton{
