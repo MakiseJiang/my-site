@@ -1,5 +1,6 @@
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import * as React from 'react';
 import { 
     container,
@@ -28,10 +29,13 @@ const Layout = ({pageTitle, children}) => {
         <div className={sidenav}>
             <div className={profileAvatar}/>
             <div className={textCenter}>Makise <strong>Jiang</strong></div>
-            <a href="#"><Link to='/'>Home</Link></a>
-            <a href="#"><Link to='/about'>About</Link></a>
-            <a href="#"><Link to='/blog'>Blog</Link></a>
-
+            <a href="/#"><Link to='/'>Home</Link></a>
+            <a href="/#"><Link to='/about'>About</Link></a>
+            <a href="/#"><Link to='/blog'>Blog</Link></a>
+            <div className={textCenter}>
+                <a  href="https://github.com/MakiseJiang"><FontAwesomeIcon icon={faGithub} color="white" /></a>
+                <a><FontAwesomeIcon icon={faTwitter} color="white" href="" /></a>
+            </div>
         </div>
         {/* MainPage */}
         <div className={container}>
@@ -39,7 +43,6 @@ const Layout = ({pageTitle, children}) => {
             <header className={siteTitle}>{data.site.siteMetadata.title}</header>
             <main>
                 <h1 className={heading}>{pageTitle}</h1>
-                <FontAwesomeIcon icon={['fab', 'apple']} color="black" />
                 {children}
             </main>
         </div>

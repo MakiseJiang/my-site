@@ -11,7 +11,8 @@
     --color-text: #2e353f;
     --color-text-light: #4f5969;
     --color-theme-light: rgb(118, 143, 218);
-    --color-theme: royalblue;
+    --color-theme: #57068C;
+    --color-theme-vice: white;
     --color-background: rgba(243, 243, 243, 0.972);
 
     --spacing-0: 0;
@@ -66,7 +67,7 @@ blockquote {
     display: block;
 }
 .sidenav a:hover {
-    color: black;
+    color: var(--color-theme-vice);
 }
 .profileAvatar {
     background-image: url("../images/Avatar.png");
@@ -95,6 +96,9 @@ blockquote {
 }
 .center-align-box{
     text-align: center;
+}
+.center-align-box a{
+    padding: 5px;
 }
 
 .DLbutton{
