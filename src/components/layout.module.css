@@ -1,20 +1,40 @@
 :root {
-    --font-heading: Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
+    --font-heading: "Quicksand", Arial, sans-serif;
+    /* Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-size-1: 1rem;
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+    --font-body: "Quicksand", Arial, sans-serif;
+    --font-title: "Playfair Display", Georgia, serif;
+    --font-size-1: 1.125rem;
     --font-size-2: 1.2rem;
+    --font-size-3: 1.4rem;
     --color-text: #2e353f;
+    --color-text-light: #4f5969;
+    --color-theme-light: rgb(118, 143, 218);
     --color-theme: royalblue;
     --color-background: rgba(243, 243, 243, 0.972);
-}
 
+    --spacing-0: 0;
+    --spacing-1: 0.25rem;
+    --spacing-6: 1.5rem;
+    --spacing-8: 2rem;
+}
+blockquote {
+    color: var(--color-text-light);
+    margin-left: calc(-1 * var(--spacing-6));
+    margin-right: var(--spacing-8);
+    padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
+    border-left: var(--spacing-1) solid var(--color-theme-light);
+    font-size: var(--fontSize-2);
+    font-style: italic;
+    margin-bottom: var(--spacing-8);
+}
 .site-title {
-    font-family: var(--font-heading);
-    font-size: 3rem;
+    font-family: var(--font-title);
+    font-size: 2.5rem;
     color: gray;
     font-weight: 700;
-    margin: 0;
+    margin: -20px 0 30px 0;
 }
 .background {
     background-color: var(--color-background);
@@ -37,10 +57,11 @@
 }
 
 .sidenav a {
-    padding: 6px 8px 6px 60px;
+    text-align: center;
+    padding: 6px;
     text-decoration: none;
     font-family: var(--font-heading);
-    font-size: 25px;
+    font-size: var(--font-size-3);
     color: white;
     display: block;
 }
@@ -50,26 +71,52 @@
 .profileAvatar {
     background-image: url("../images/Avatar.png");
     vertical-align: middle;
-    margin: 60px 60px 60px 75px;
+    margin: 30px auto;
     height: 150px;
     width: 150px;
     background-size: cover;
     background-repeat: no-repeat;
-    border: 4px solid white;
+    border: 3px solid white;
     border-radius: 50%;
     @media screen and (max-width: 767px) {
     max-width: 230px;
     margin: auto;
     }
 }
+
+.text-center{
+    margin: 10px 30px 30px 30px;
+    padding: 6px;
+    font-family: var(--font-title);
+    font-weight: 100;
+    font-size: var(--font-size-3);
+    color: white;
+    text-align: center;
+}
+.center-align-box{
+    text-align: center;
+}
+
+.DLbutton{
+    margin: 20px;
+    padding: 8px;
+    font-family: var(--font-heading);
+    font-size: var(--font-size-3);
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
 .container {
     margin: auto;
     min-height: 60rem;
-    padding: 45px 45px 45px 200px;
-    max-width: 35rem;
+    padding: 45px 45px 45px 220px;
+    max-width: 38rem;
     font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.8;
     background-color: var(--color-background);
-    font-size: var(--font-size-2);
+    font-size: var(--font-size-1);
     color: var(--color-text);
 }
 .heading {
@@ -77,11 +124,6 @@
     font-family: var(--font-heading);
     text-align: center;
     font-size: 36pt;
-}
-.nav-links {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
 }
 .nav-link-item {
     padding-right: 2rem;
@@ -93,6 +135,6 @@
     font-size: 18pt;
 }
 .segment {
-    border: 3px solid rgb(189, 185, 185);
+    border: 2px solid rgb(189, 185, 185);
     border-radius: 3px;
 }
