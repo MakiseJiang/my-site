@@ -30,8 +30,8 @@ const Layout = ({pageTitle, children}) => {
         <div className={sidenav}>
             <div className={profileAvatar}/>
             <div className={nameBox}>Makise <strong>Jiang</strong></div>
-            <a href="/#"><Link to='/'>Home</Link></a>
-            <a href="/#"><Link to='/about'>About</Link></a>
+            <a href="/#"><Link to='/'>About</Link></a>
+            <a href="/#"><Link to='/portfolio'>Portfolio</Link></a>
             <a href="/#"><Link to='/blog'>Blog</Link></a>
             <div className={textCenter}><div className={mapIcon}><FontAwesomeIcon icon={faMapMarkerAlt} color="white" /></div>Shanghai, CN</div>
             <div className={textCenter}>
@@ -40,6 +40,7 @@ const Layout = ({pageTitle, children}) => {
                     <li><a><FontAwesomeIcon icon={faTwitter} color="white" href="" /></a></li>
                     <li><a><FontAwesomeIcon icon={faInstagram} color="white" href="" /></a></li>
                     <li><a><FontAwesomeIcon icon={faLinkedin} color="white" href="" /></a></li>
+                    <li>makisejh@sjtu.edu.cn</li>
                 </ul>
             </div>
         </div>

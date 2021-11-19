@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 :root {
     --font-heading: "Quicksand", Arial, sans-serif;
     /* Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
-    --font-body: Arial, sans-serif;
+    --font-body: "Source Sans Pro", Arial, sans-serif;
     --font-title: "Playfair Display", Georgia, serif;
     --font-size-small: 0.8rem;
-    --font-size-text: 1.125rem;
+    --font-size-text: 1.1rem;
     --font-size-1: 1rem;
     --font-size-2: 1.1rem;
     --font-size-3: 1.4rem;
-    --color-text: #2e353f;
+    --color-text: #353d48;
     --color-text-light: #4f5969;
     --color-theme-light: rgb(118, 143, 218);
     --color-theme: #57068C;
@@ -39,7 +40,7 @@ blockquote {
     font-size: 2.5rem;
     color: gray;
     font-weight: 700;
-    margin: -20px 0 30px 0;
+    margin: -30px 0 30px -30px;
 }
 .background {
     background-color: var(--color-background);
@@ -47,6 +48,18 @@ blockquote {
     background-position: top left;
     margin: -10px -8px -8px -10px;
     padding: -1px;
+}
+.container {
+    margin: auto;
+    min-height: 60rem;
+    padding: 45px 45px 45px 220px;
+    max-width: 38rem;
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.8;
+    background-color: var(--color-background);
+    font-size: var(--font-size-text);
+    color: var(--color-text);
 }
 .sidenav {
     margin-left: 90px;
@@ -97,6 +110,10 @@ blockquote {
     font-size: var(--font-size-3);
     color: white;
     text-align: center;
+    -webkit-text-decoration: white solid underline;
+    text-decoration: white solid underline;
+    -webkit-text-underline-position: under;
+    text-underline-position: under;
 }
 .text-center{
     margin: 30px 60px;
@@ -121,6 +138,10 @@ blockquote {
     display: inline;
     padding: 10px;
 }
+.text-center ul li a:hover{
+    color: inherit;
+    background-color: inherit;
+}
 .map-icon{
     float: left;
     margin : 2px 2px 18px 10px;
@@ -135,18 +156,7 @@ blockquote {
     text-align: center;
 }
 
-.container {
-    margin: auto;
-    min-height: 60rem;
-    padding: 45px 45px 45px 220px;
-    max-width: 38rem;
-    font-family: var(--font-body);
-    font-weight: 400;
-    line-height: 1.8;
-    background-color: var(--color-background);
-    font-size: var(--font-size-text);
-    color: var(--color-text);
-}
+
 .heading {
     color: var(--color-theme);
     font-family: var(--font-heading);

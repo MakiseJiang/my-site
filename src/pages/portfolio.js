@@ -5,8 +5,8 @@ import { segment } from "../components/layout.module.css";
 
 const AboutPage = () => {
     return (
-    <Layout pageTitle='About'>
-        <p>Hi there! I'm Makise the proud creator of this site, which I built with Gatsby.</p>
+    <Layout pageTitle='Portfolio'>
+        <p>More projects and researches will be added HERE. </p>
     </Layout>
     )
 }
