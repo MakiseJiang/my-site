@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Timeline, TimelineEvent } from 'react-event-timeline';
 import Layout from '../components/layout';
-import { segment } from "../components/layout.module.css";
 
 const IndexPage = () => {
   return(

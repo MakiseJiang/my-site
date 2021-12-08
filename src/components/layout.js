@@ -29,7 +29,7 @@ const Layout = ({pageTitle, children}) => {
         {/* SideBar */}
         <div className={sidenav}>
             <div className={profileAvatar}/>
-            <div className={nameBox}>Makise <strong>Jiang</strong></div>
+            <div className={nameBox}>Hang "Viktor" <strong>Jiang</strong></div>
             <a href="/#"><Link to='/'>About</Link></a>
             <a href="/#"><Link to='/portfolio'>Portfolio</Link></a>
             <a href="/#"><Link to='/blog'>Blog</Link></a>
